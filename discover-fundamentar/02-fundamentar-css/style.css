@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+/*serve para importar fontes entre outras utilidades, porém não é indicado por deixar o processamento do css mais lento*/
+
+/*
+seletor global: *
+seletor de tipo ou elemento: h1, h2, p, div
+seletor de id: #box, #container
+seletor de classe: .red, .m-4
+*/
+
+* {
+    margin: 0;
+}
+
+#container {
+    width: 200px;
+    /*largura*/
+    color: green;
+    /*cor da fonte*/
+    font-size: 35px;
+    /*tamanho da fonte*/
+    background-color: gray;
+    /*cor de fundo*/
+}
+
+.m-40 {
+    margin: 40px;
+    /*margem do elemento*/
+}
+
+/*h1, h2{
+    color: green;
+    font-size: 60px;
+    background-color: gray;
+}*/
+
+#titulo1 {
+    border: 1px solid red;
+    /*borda de 1px, sólida e de cor vermelha*/
+    margin: 200px;
+    /*espaço ao redor da caixa; espaçamento por fora*/
+    padding: 60px;
+    /*espaço por dentro da caixa*/
+    font-family: 'Dongle', sans-serif;
+    /*altera a fonte do elemento*/
+}
+
+/*é possível juntar no css o elemento, a classe e o id*/
+h2.subtitle#my-title {
+    color: aqua;
+}
+
+/*especificando em profundidade onde eu quero estilizar; as vírgulas separam, é para que eu possa colocar mais de um conjunto de regras, propriedades e valores*/
+#my-buttton,
+#my-button strong {
+    background-color: gray !important;
+    /*o !important sobrescreve tudo, não é indicado, só usar se realmente for necessário*/
+}
+
+/*
+Forças dos estilos:
+
+0. seletor univesal/global
+1. seletor de tipo ou elemento
+10. seletor de classe
+100. seletor de id
+1000. inline 
+
+
+@import: incluir css externo
+@media: regras condicionais para dispositivos
+@font-face: fontes externas
+@keyframes: animation
+
+
+features: coloca alguma novidade no css
+
+-webkit-background-clip:text; Chrome, Safari, iOS e Android
+-moz-background-clip:text; Mozilla
+-ms-background-clip:text; Explorer
+-o-background-clip:text; Opera
+
+sites: ireade; caniuse
+
+Tipos numéricos:
+<integer> número inteiro
+<number> número decimal
+<dimension> numero com unidade junto: 90deg(graus), 2s, 8px
+<percentagem> porcentagem, fração de um número
+
+<lenght> valor de distância: px, em, vw
+<angle> ângulo: deg, rad, turn
+<time> tempo: s, ms
+<resolution> resoluções para dispositivos: dpi
+
+
+Unidades de medida:
+
+cm -> centímetros
+in -> polegadas
+px -> pixels
+
+**mais comum e mais utilizado é o px**
+
+em: referencia o tamanho da fonte do pai
+rem: referencia o tamanho da fonte do elemento raiz(root/html)
+vw: 1% da viewport widht
+vh: 1% da viewport height
+
+Funções:
+
+rgb()
+hsl()
+url()
+calc()
+*/
