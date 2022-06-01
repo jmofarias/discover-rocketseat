@@ -42,7 +42,7 @@ span{
 
 section{
     margin-top: 8px; /*espaçamento de cima; nao vai somar com os outros 8px, vai permanecer apenas esse valor aqui definido por conta do margin collapsing(o top se junta com o bottom) */
-    margin: 10px auto /*o auto faz calculos automaticos nas laterais*/;
+    margin: 10px auto; /*o auto faz calculos automaticos nas laterais*/
 }
 
 /* 
